@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Maintenance.html</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+	<body>
+	<!--
+	Hunter Lowry, January 12, 2020. Week5 HTML5 Website Development
+	Itroducing Maintenance Plan.
+	-->
+	
+		<h1> MaintenancePlan </h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="operators.html">Operators</a> | <a href="roulette.html">Roulette</a> | <a href="form.html">Subscription</a>
+				| <a href="mainenance.html">Maintenance</a>
+			</nav>
+			<h4 style="text-align:right;">Date/Time: <span id="datetime"></span></h4>
+				<script>var dt = new Date();
+				document.getElementById("datetime").innerHTML=dt.toLocaleString();
+				</script>
+		<hr />
+		
+	</body>
+</html>

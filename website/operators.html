@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Operators.html</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+	<body>
+	<!--
+	Hunter Lowry, December 13, 2019. Week3 HTML5 Website Development
+	-->
+	
+		<h1>Rainbow6Operators</h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="operators.html">Operators</a> | <a href="roulette.html">Roulette</a> | <a href="form.html">Subscription</a>
+			</nav>
+			<h4 style="text-align:right;">Date/Time: <span id="datetime"></span></h4>
+				<script>var dt = new Date();
+				document.getElementById("datetime").innerHTML=dt.toLocaleString();
+				</script>
+		<hr />
+	<!--
+	Hunter Lowry, December 14, 2019. Below is the 
+	drop down bar options
+	-->
+	<select id="operatorSelect">
+		<option value="Divisions">Operator Divisions</option>
+		<option value="SAS">SAS</option>
+		<option value="FBI">FBI</option>
+		<option value="GIGN">GIGN</option>
+		<option value="GSG9">GSG9</option>
+		<option value="SPETSNAZ">SPETSNAZ</option>
+		<option value="JTF2">JTF2</option>
+		<option value="NAVY_SEALS">NAVY SEALS</option>
+		<option value="BOPE">BOPE</option>
+		<option value="S.A.T.">S.A.T.</option>
+		<option value="G.E.O.">G.E.O.</option>
+		<option value="S.D.U">S.D.U</option>
+		<option value="G.R.O.M">G.R.O.M</option>
+		<option value="707th_SMB">707th SMB</option>
+		<option value="G.I.S.">G.I.S.</option>
+		<option value="The_UNIT">The UNIT</option>
+		<option value="GIGR">GIGR</option>
+		<option value="SASR">SASR</option>
+		<option value="SECRET_SERVICE">SECRET SERVICE</option>
+		<option value="FES">FES</option>
+		<option value="NIGHTHAVEN">NIGHTHAVEN</option>
+	</select>
+		<div class="img-div">
+			<img src="images/ela.jpg" alt="Operator Ela" width="410" height="700" />
+		</div>
+	<!--
+	Hunter Lowry, December 15, 2019. Below is the 
+	different divisions output
+	-->
+		<div id="Divisions" class="operator-div">
+			<p>
+				From the drop-down list above, please select an operator division you wish to learn about.
+				If you wish to learn about multiple divisions please select through them one at a time. The information
+				provided will give you a brief description of the operators and the gadgests/abilities. You will also be
+				shown their operator logo making them easier to identify in game.
+			</p>
+		</div>
+		<div id="SAS" class="operator-div">
+			<strong>Attackers:</strong> <br /> <img src="images/sledge.png" alt="Operator Sledge" width="50" height="50" /> <strong><u>Sledge:</u></strong>
+				A 2-speed, 2-armor operator with breaching hammer.
+				<br /> <img src="images/thatcher.png" alt="Operator Thatcher" width="50" height="50" /> <strong><u>Thatcher:</u></strong>
+				A 2-speed, 2-armor operator with emp grenades.	
+		<br />
+			<strong>Defenders:</strong> <br /> <img src="images/smoke.png" alt="Operator Smoke" width="50" height="50" /> <strong><u>Smoke:</u></strong>
+				A 2-speed, 2-armor operator with toxic gas grenades.
+				<br /> <img src="images/mute.png" alt="Operator Mute" width="50" height="50" /> <strong><u>Mute:</u></strong>
+				A 2-speed, 2-armor operator with signal disrupting mute jammers.
+		</div>
+
+		<div id="FBI" class="operator-div">
+			<strong>Attackers:</strong> <br /> <img src="images/ash.png" alt="Operator Ash" width="50" height="50" /> <strong><u>Ash:</u></strong>
+				A 3-speed, 1-armor operator with breaching charge grenade launcher.
+				<br /> <img src="images/thermite.png" alt="Operator Thermite" width="50" height="50" /> <strong><u>Thermite:</u></strong>
+				A 2-speed, 2-armor operator with exothermic charges.	
+		<br />
+			<strong>Defenders:</strong> <br /> <img src="images/castle.png" alt="Operator Castle" width="50" height="50" /> <strong><u>Castle:</u></strong>
+				A 2-speed, 2-armor operator with reinforced door barricades.
+				<br /> <img src="images/pulse.png" alt="Operator Pulse" width="50" height="50" /> <strong><u>Pulse:</u></strong>
+				A 3-speed, 1-armor operator with a hearbeat senseing monitor.
+		</div>
+
+		<div id="GIGN" class="operator-div">
+			<strong>Attackers:</strong> <br /> <img src="images/twitch.png" alt="Operator Twitch" width="50" height="50" /> <strong><u>Twitch:</u></strong>
+				A 2-speed, 2-armor operator with a modified shock drone.
+				<br /> <img src="images/montagne.png" alt="Operator Montagne" width="50" height="50" /> <strong><u>Montagne:</u></strong>
+				A 1-speed, 3-armor operator with a full body extendable bulletproof shield.	
+				<br /> <img src="images/lion.png" alt="Operator Lion" width="50" height="50" /> <strong><u>Lion:</u></strong>
+				A 2-speed, 2-armor operator with an EE-One-D drone overhead that detects enemy movement.
+		<br />
+			<strong>Defenders:</strong> <br /> <img src="images/doc.png" alt="Operator Doc" width="50" height="50" /> <strong><u>Doc:</u></strong>
+				A 1-speed, 3-armor operator with a healing stem pistol.
+				<br /> <img src="images/rook.png" alt="Operator Rook" width="50" height="50" /> <strong><u>Rook:</u></strong>
+				A 1-speed, 3-armor operator with the ability to drop armored vests for the whole team.
+		</div>
+						
+		<div id="GSG9" class="operator-div">
+			<strong>Attackers:</strong> <br /> <img src="images/iq.png" alt="Operator IQ" width="50" height="50" /> <strong><u>IQ:</u></strong>
+				A 3-speed, 1-armor operator with an electronic device detector.
+				<br /> <img src="images/blitz.png" alt="Operator Blitz" width="50" height="50" /> <strong><u>Blitz:</u></strong>
+				A 2-speed, 2-armor operator with a riot shield equiped with bright flash charges.	
+		<br />
+			<strong>Defenders:</strong> <br /> <img src="images/bandit.png" alt="Operator Bandit" width="50" height="50" /> <strong><u>Bandit:</u></strong>
+				A 3-speed, 1-armor operator with shock batteries.
+				<br /> <img src="images/jager.png" alt="Operator Jager" width="50" height="50" /> <strong><u>Jager:</u></strong>
+				A 3-speed, 1-armor operator with active defense systems.
+		</div>
+			
+		<div id="SPETSNAZ" class="operator-div">
+			<strong>Attackers:</strong> <br /> <img src="images/fuze.png" alt="Operator Fuze" width="50" height="50" /> <strong><u>Fuze:</u></strong>
+				A 1-speed, 3-armor operator with a remote cluster grenade charge.
+				<br /> <img src="images/glaz.png" alt="Operator Glaz" width="50" height="50" /> <strong><u>Glaz:</u></strong>
+				A 2-speed, 2-armor operator with a sniper equiped with a thermal scope.
+				<br /> <img src="images/finka.png" alt="Operator Finka" width="50" height="50" /> <strong><u>Finka:</u></strong>
+				A 2-speed, 2-armor operator with a Nanobot Shot giving her and the team a short burst of health as well as reducing recoil.
+		<br />
+			<strong>Defenders:</strong> <br /> <img src="images/kapkan.png" alt="Operator Kapkan" width="50" height="50" /> <strong><u>Kapkan:</u></strong>
+				A 2-speed, 2-armor operator with enemy entry denial devices that blow up upon triggering.
+				<br /> <img src="images/tachanka.png" alt="Operator Tachanka" width="50" height="50" /> <strong><u>Tachanka:</u></strong>
+				A 1-speed, 3-armor operator with a stationary mounted shielded turret.
+		</div>
+			
+		<div id="JTF2" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/buck.png" alt="Operator Buck" width="50" height="50" /> <strong><u>Buck:</u></strong>
+				A 2-speed, 2-armor operator with a skeleton-key underbarrel shotgun.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/frost.png" alt="Operator Frost" width="50" height="50" /> <strong><u>Frost:</u></strong>
+				A 2-speed, 2-armor operator with enemy entry denial bear-mats.
+				<br />
+		</div>
+		
+		<div id="NAVY_SEALS" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/blackbeard.png" alt="Operator Blackbeard" width="50" height="50" /> <strong><u>Blackbeard:</u></strong>
+				A 2-speed, 2-armor operator with a overbarrel mountable face shield.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/valkyrie.png" alt="Operator Valkyrie" width="50" height="50" /> <strong><u>Valkyrie:</u></strong>
+				A 2-speed, 2-armor operator with throwable balck-eye cameras.
+				<br />
+		</div>
+		
+		<div id="BOPE" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/capitao.png" alt="Operator Capitao" width="50" height="50" /> <strong><u>Capitao:</u></strong>
+				A 3-speed, 1-armor operator with a crossbow loaded with fire bolts and smoke grenades.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/caveira.png" alt="Operator Caveira" width="50" height="50" /> <strong><u>Caveira:</u></strong>
+				A 3-speed, 1-armor operator with the ability to silent step and interrogate enemies.
+				<br />
+		</div>
+		
+		<div id="S.A.T." class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/hibana.png" alt="Operator Hibana" width="50" height="50" /> <strong><u>Hibana:</u></strong>
+				A 3-speed, 1-armor operator with an x-kiaro exothermic pellet launcher.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/echo.png" alt="Operator Echo" width="50" height="50" /> <strong><u>Echo:</u></strong>
+				A 1-speed, 3-armor operator with a yokai drone able to disrupt/stun enemies.
+				<br />
+		</div>
+		
+		<div id="G.E.O." class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/jackal.png" alt="Operator Jackal" width="50" height="50" /> <strong><u>Jackal:</u></strong>
+				A 2-speed, 2-armor operator with the ability to scan and track enemy footsteps.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/mira.png" alt="Operator Mira" width="50" height="50" /> <strong><u>Mira:</u></strong>
+				A 1-speed, 3-armor operator with bulletproof one-way mirror windows.
+				<br />
+		</div>
+		
+		<div id="S.D.U" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/ying.png" alt="Operator Ying" width="50" height="50" /> <strong><u>Ying:</u></strong>
+				A 2-speed, 2-armor operator with bursting flash grenades(candelas) only she is immune to(due to her glasses).
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/lesion.png" alt="Operator Lesion" width="50" height="50" /> <strong><u>Lesion:</u></strong>
+				A 2-speed, 2-armor operator with enemy entry denial toxic gu mines.
+				<br />
+		</div>
+		
+		<div id="G.R.O.M" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/zofia.png" alt="Operator Zofia" width="50" height="50" /> <strong><u>Zofia:</u></strong>
+				A 2-speed, 2-armor operator with a KS79 Lifeline launcher containing both concussion and impact grenades.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/ela.png" alt="Operator Ela" width="50" height="50" /> <strong><u>Ela:</u></strong>
+				A 3-speed, 1-armor operator with enemy entry denial Grzmot Mines, known to cause a dizzying effect slowing movement and imparing vision.
+				<br />
+		</div>
+		
+		<div id="707th_SMB" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/dokkaebi.png" alt="Operator Dokkaebi" width="50" height="50" /> <strong><u>Dokkaebi:</u></strong>
+				A 2-speed, 2-armor operator with a Logic Bomb device which causes surrounding enemy tactical devices to emit a lound noise.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/vigil.png" alt="Operator Vigil" width="50" height="50" /> <strong><u>Vigil:</u></strong>
+				A 3-speed, 1-armor operator with an ERC-7 backpack which wipes his image from surrounding enemy electronic devices.
+				<br />
+		</div>
+		
+		<div id="G.I.S." class="operator-div">
+			<strong>Defenders:</strong> <br /> <img src="images/alibi.png" alt="Operator Alibi" width="50" height="50" /> <strong><u>Alibi:</u></strong>
+				A 3-speed, 1-armor operator with prisma holograms identical to her.
+				<br /> <img src="images/maestro.png" alt="Operator Maestro" width="50" height="50" /> <strong><u>Maestro:</u></strong>
+				A 1-speed, 3-armor operator with Evil-Eye remote controlled turrets.
+		</div>
+		
+		<div id="The_UNIT" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/maverick.png" alt="Operator Maverick" width="50" height="50" /> <strong><u>Maverick:</u></strong>
+				A 3-speed, 1-armor operator with a blowtorch that allows him to burn through reinforced walls.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/clash.png" alt="Operator Clash" width="50" height="50" /> <strong><u>Clash:</u></strong>
+				A 1-speed, 3-armor operator with an extendable bulletproof CCE Shield allowing her to zap her enemies with a high voltage Charged Field Generator.
+				<br />
+		</div>
+		
+		<div id="GIGR" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/nomad.png" alt="Operator Nomad" width="50" height="50" /> <strong><u>Nomad:</u></strong>
+				A 2-speed, 2-armor operator with Airjab repulsion grenades that knock enemies down when triggered.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/kaid.png" alt="Operator Kaid" width="50" height="50" /> <strong><u>Kaid:</u></strong>
+				A 1-speed, 3-armor operator with throwable Electroclaws that electrify reinforced walls, hatches, barbed wire and deployable shields.
+				<br />
+		</div>
+		
+		<div id="SASR" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/gridlock.png" alt="Operator Gridlock" width="50" height="50" /> <strong><u>Gridlock:</u></strong>
+				A 1-speed, 3-armor operator with deployable Trax Stinigers that when activated, deploy a cluster of spikes.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/mozzie.png" alt="Operator Mozzie" width="50" height="50" /> <strong><u>Mozzie:</u></strong>
+				A 2-speed, 2-armor operator with 4-legged bots called Pests that latch onto attackers drones and give him control.
+				<br />
+		</div>
+		
+		<div id="SECRET_SERVICE" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/nokk.png" alt="Operator Nokk" width="50" height="50" /> <strong><u>Nokk:</u></strong>
+				A 2-speed, 2-armor operator with a HEL glove attachment that reduces her amnient noise output and hides her image from enemy cameras.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/warden.png" alt="Operator Warden" width="50" height="50" /> <strong><u>Warden:</u></strong>
+				A 1-speed, 3-armor operator with Glance glasses he is able to see through smoke as well as prevent blindness from flash effects.
+				<br />
+		</div>
+		
+		<div id="FES" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/amaru.png" alt="Operator Amaru" width="50" height="50" /> <strong><u>Amaru:</u></strong>
+				A 2-speed, 2-armor operator with a Garra Hook allowing her to grapple onto ledges and into windows faster than any other attacker.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/goyo.png" alt="Operator Goyo" width="50" height="50" /> <strong><u>Goyo:</u></strong>
+				A 2-speed, 2-armor operator with deployable Volcan shields fitted with incendiary bombs.
+				<br />
+		</div>
+		
+		<div id="NIGHTHAVEN" class="operator-div">
+			<strong>Attacker:</strong> <br /> <img src="images/kali.png" alt="Operator Kali" width="50" height="50" /> <strong><u>Kali:</u></strong>
+				A 2-speed, 2-armor operator with the CSRX 300 sniper equiped with the LV Explosive Lance used to destroy enemy equipment.
+				<br />	
+			<strong>Defender:</strong> <br /> <img src="images/wamai.png" alt="Operator Wamai" width="50" height="50" /> <strong><u>Wamai:</u></strong>
+				A 3-speed, 1-armor operator with Mag-NET Systems that attract enemy thrown projectiles.
+				<br />
+		</div>
+	<!--
+	Hunter Lowry, December 15, 2019. Below is the 
+	JavaScript code for the divisions outputs in 
+	regards to dropdown bar.
+	-->
+		<script>
+			function selectValue(value) {
+				const operatorSelect = document.getElementById('operatorSelect');
+				const operatorDivs = document.getElementsByClassName('operator-div');
+
+				for (let i = 0; i < operatorDivs.length; i++) {
+					operatorDivs[i].classList.remove('visible');
+				}
+
+
+				operatorDivs[value].classList.add('visible');
+				operatorSelect.value = value;
+			}
+
+
+			const dropdown = document.getElementById('operatorSelect');
+
+
+			operatorSelect.addEventListener('change', (e) => selectValue(e.target.value));
+
+			const defaultValue = 'Divisions';
+			selectValue('Divisions');
+		</script>
+	</body>
+</html>

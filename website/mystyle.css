@@ -1,0 +1,57 @@
+
+		body {
+			background-color: black;
+			color: grey;
+			font-family: "Comic Sans MS",
+				cursive, sans-serif;
+		}
+		
+		h1 {
+			color: white;
+			font-family: "Courier New",
+				Courier, monospace
+		}
+		
+		nav {
+			font-size: 17px;
+			color: white;
+		}
+		
+		div {
+			max-width: 500px;
+		}
+		
+		h4 {
+			font-size: 15px;
+			color: white;
+			font-family: "Courier New",
+				Courier, monospace
+		}
+		
+		strong {
+			color: white;
+			font-family: "Courier New",
+				Courier, monospace
+		}
+		
+		.img-div {
+			float: right;
+			width: 410px;
+			padding: 10px;
+		}
+		
+		.operator-div {
+			background-color: black;
+			display: none;
+			max-width: 750px;
+		}
+		
+		.operator-div.visible {
+			display: block;
+		}
+		
+		.flex-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}

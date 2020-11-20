@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Roulette.html</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+	<body>
+	<!--
+	Hunter Lowry, December 8, 2019. Week2 HTML5 Website Development
+	-->
+	
+		<h1> Rainbow6Roulette </h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="operators.html">Operators</a> | <a href="roulette.html">Roulette</a> | <a href="form.html">Subscription</a>
+			</nav>
+			<h4 style="text-align:right;">Date/Time: <span id="datetime"></span></h4>
+				<script>var dt = new Date();
+				document.getElementById("datetime").innerHTML=dt.toLocaleString();
+				</script>
+		<hr />
+		
+		<div>
+			<p>
+				Below, using the drop down bar, please select whether you are playing on attack or defense.
+				This will help us in determining the correctly sided operators to output for you.
+			</p>
+		</div>
+		<select id="randomSelect">
+			<option value="Select_Your_Side">Select Your Side</option>
+			<option value="Attack">Attack</option>
+			<option value="Defense">Defense</option>
+		</select>
+		
+		<div id="Select_Your_Side" class="operator-div">
+			<p>
+				<strong>Here is a list of operators you could be playing:<br />
+				<u>Attack:</u></strong> Sledge, Thatcher, Ash, Thermite, Twitch, 
+				Montagne, Lion, IQ, Blitz, Fuze, Glaz, Finka, Buck, Blackbeard, Capitao, 
+				Hibana, Jackal, Ying, Zofia, Dokkaebi, Maverick, Nomad, Gridlock, Nokk, 
+				Amaru, Kali<br />
+				<strong><u>Defense:</u></strong> Smoke, Mute, Castle, Pulse, Doc, Rook, 
+				Bandit, Jager, Kapkan, Tachanka, Frost, Valkyire, Caveria, Echo, 
+				Mira, Lesion, Ela, Vigil, Clash, Maestro, Alibi, Kaid, Mozzie, Warden, 
+				Goyo, Wamai <img src="images/logo.jpeg" alt="Rainbow Logo" width="750" height="700" />
+			</p>
+		</div>
+		
+		<div id="Attack" class="operator-div">
+			<button onclick="randomAttacker()">Randomize Attacker</button>
+			<p id="attacker"></p>
+		</div>
+		
+		<div id="Defense" class="operator-div">
+			<button onclick="randomDefender()">Randomize Defender</button>
+			<p id="defender"></p>
+		</div>
+		
+		<script>
+			var attackerArray=[
+				"Sledge", "Thatcher", "Ash", "Thermite", "Twitch", "Montagne", "Lion", "IQ", "Blitz",
+				"Fuze", "Glaz", "Finka", "Buck", "Blackbeard", "Capitao", "Hibana", "Jackal", "Ying",
+				"Zofia", "Dokkaebi", "Maverick", "Nomad", "Gridlock", "Nokk", "Amaru", "Kali"
+			];
+				
+			var defenderArray=[
+				"Smoke", "Mute", "Castle", "Pulse", "Doc", "Rook", "Bandit", "Jager", "Kapkan", "Tachanka",
+				"Frost", "Valkyire", "Caveria", "Echo", "Mira", "Lesion", "Ela", "Vigil", "Clash", "Maestro",
+				"Alibi", "Kaid", "Mozzie", "Warden", "Goyo", "Wamai"
+			];
+			
+			function randomAttacker() {
+				var randomOperator = Math.floor(Math.random() * attackerArray.length); 
+				document.getElementById('attacker').innerHTML = attackerArray[randomOperator];
+			}
+			
+			function randomDefender() {
+				var randomOperator = Math.floor(Math.random() * attackerArray.length); 
+				document.getElementById('defender').innerHTML = defenderArray[randomOperator];
+			}
+			
+			
+			
+			function selectValue(value) {
+				const testSelect = document.getElementById('randomSelect');
+				const operatorDivs = document.getElementsByClassName('operator-div');
+
+				for (let i = 0; i < operatorDivs.length; i++) {
+				operatorDivs[i].classList.remove('visible');
+				}
+
+
+			operatorDivs[value].classList.add('visible');
+			randomSelect.value = value;
+			}
+
+
+			const dropdown = document.getElementById('randomSelect');
+
+
+			randomSelect.addEventListener('change', (e) => selectValue(e.target.value));
+
+			const defaultValue = 'Select_Your_Side';
+			selectValue('Select_Your_Side');
+		</script>
+	</body>
+</html>

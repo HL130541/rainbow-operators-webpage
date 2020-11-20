@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Subscribe </title>
+	<style "text/css">
+		.flex-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	</style>
+</head>
+	<body>
+	<!--
+	Hunter Lowry, January 4, 2020. Week4 HTML5 Website Development
+	Itroducing Forms.
+	-->
+	
+		<h1> Email Subscription </h1>
+			<nav>
+				<a href="index.html">Home</a> | <a href="operators.html">Operators</a> | <a href="roulette.html">Roulette</a> | <a href="form.html">Subscription</a>
+			</nav>
+			<h4 style="text-align:right;">Date/Time: <span id="datetime"></span></h4>
+				<script>var dt = new Date();
+				document.getElementById("datetime").innerHTML=dt.toLocaleString();
+				</script>
+		<hr></hr>
+		<div class="flex-container">
+			<form action="action_page.php" method="get">
+				First name: <div><input type="text" name="fname"></div>
+				Last name: <div><input type="text" name="lname"></div>
+				Email: <div><input type="text" name="email"></div>
+					<input type="submit" value="Submit">
+			</form>
+		</div>
+		
+	</body>
+</html>
